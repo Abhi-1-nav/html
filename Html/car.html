@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahindra Cars</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    /* ✅ Your Navbar CSS */
+    .NB {
+      background-color: black;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      height: 10vh;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      align-items: center;
+    }
+
+    .NB a {
+      color: white;
+      font-size: 20px;
+      margin-left: 50px;
+      font-family: cursive;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .NB a:hover {
+      color: orange;
+    }
+
+    .NB button {
+      background-color: orange;
+      border-radius: 15px;
+      border: none;
+      padding: 6px 14px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .NB button:hover {
+      background-color: #ffb347;
+    }
+
+    .NB button a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    /* Heading */
+    .heading {
+      text-align: center;
+      padding: 40px 10px;
+    }
+
+    .heading h1 {
+      font-size: 36px;
+      color: #111;
+      font-family: cursive;
+    }
+
+    .heading p {
+      font-size: 18px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    /* Car Section */
+    .car-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .car-box {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .car-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .car-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 15px;
+    }
+
+    .car-info h2 {
+      color: #000;
+      font-size: 20px;
+      margin-bottom: 8px;
+      font-family: cursive;
+    }
+
+    .car-info p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 6px;
+      font-family: cursive;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .NB {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+      }
+
+      .NB a {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ✅ Navbar -->
+  <nav class="NB">
+    <a href="#" style="font-size:35px; color:orange;">Mahindra</a>
+    <a href="index.html">Home</a>
+    <a href="car.html">Popular Cars</a>
+    <a href="contact.html">Contact Us</a>
+    <button><a href="signup.html">Sign Up</a></button>
+    <button><a href="login.html">Login</a></button>
+  </nav>
+
+  <!-- Heading -->
+  <div class="heading">
+    <h1>Mahindra Popular Cars</h1>
+    <p>Explore Mahindra’s top SUVs and cars in 2025.</p>
+  </div>
+
+  <!-- Cars Section -->
+  <div class="car-container">
+
+    <div class="car-box">
+      <img src="https://wallpapercave.com/wp/wp12370505.jpg" alt="Mahindra Scorpio Classic">
+      <div class="car-info">
+        <h2>Mahindra Scorpio Classic</h2>
+        <p>2.2L mHawk diesel engine, powerful and rugged design.</p>
+        <p class="price">₹13.25 – ₹17.06 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://cdn.cars24.com/prod/auto-news24-cms/Newsroom/2024/09/04/a5c5df5d-cec5-4365-967d-206d54a2fb6e-2024-mahindra-scorpio-exterior-front-midnight-black-mahindra.webp" alt="Mahindra Scorpio N">
+      <div class="car-info">
+        <h2>Mahindra Scorpio N</h2>
+        <p>Luxury SUV with advanced features and strong off-road performance.</p>
+        <p class="price">₹13.85 – ₹24.54 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://upcomingcar.in/wp-content/uploads/2024/03/Mahindra-XUV-700-2024-Model.jpg" alt="Mahindra XUV700">
+      <div class="car-info">
+        <h2>Mahindra XUV700</h2>
+        <p>Premium SUV with ADAS, large touchscreen, and great performance.</p>
+        <p class="price">₹14.03 – ₹26.57 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://nenow.in/wp-content/uploads/2022/04/Mahindra_Thar_Photoshoot_At_Perupalem_Beach_West_Godavari_DistrictAPIndia__Djdavid.jpg" alt="Mahindra Thar">
+      <div class="car-info">
+        <h2>Mahindra Thar</h2>
+        <p>Iconic off-roader with petrol and diesel 4x4 variants.</p>
+        <p class="price">₹11.35 – ₹17.60 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://auto.economictimes.indiatimes.com/files/retail_files/xuv300-1664177255-prod-var.jpg" alt="Mahindra XUV300">
+      <div class="car-info">
+        <h2>Mahindra XUV300</h2>
+        <p>Compact SUV with 5-star safety rating and sporty design.</p>
+        <p class="price">₹8.41 – ₹14.75 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.xZX--3L2gSphchIbe1Aq-AHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mahindra XUV400 EV">
+      <div class="car-info">
+        <h2>Mahindra XUV400 EV</h2>
+        <p>Electric SUV with 456 km range and quick charging options.</p>
+        <p class="price">₹15.99 – ₹19.39 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.sJAUBQwAgaHuk8zKtuk8WAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mahindra Bolero">
+      <div class="car-info">
+        <h2>Mahindra Bolero</h2>
+        <p>Strong and durable SUV, ideal for Indian roads.</p>
+        <p class="price">₹9.90 – ₹10.91 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://www.cartoq.com/wp-content/uploads/2023/01/Mahindra-Bolero-Neo-Limited-Edition-Front.jpg" alt="Mahindra Bolero Neo">
+      <div class="car-info">
+        <h2>Mahindra Bolero Neo</h2>
+        <p>Modern version of the Bolero with comfort and style.</p>
+        <p class="price">₹9.95 – ₹12.15 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://www.ondrive.in/wp-content/uploads/Marazzo-Front-Image.jpg" alt="Mahindra Marazzo">
+      <div class="car-info">
+        <h2>Mahindra Marazzo</h2>
+        <p>Spacious MPV with smooth ride and diesel engine.</p>
+        <p class="price">₹14.39 – ₹16.80 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://th.bing.com/th/id/OIP.iE7vU9K86TYNsF0C6yIWFAHaFA?w=258&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3 alt="Mahindra Alturas G4">
+      <div class="car-info">
+        <h2>Mahindra Alturas G4</h2>
+        <p>Luxury 4WD SUV with premium interiors and strong performance.</p>
+        <p class="price">₹28.88 – ₹32.97 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/21497/kuv100-nxt-exterior-right-front-three-quarter-64046.jpeg" alt="Mahindra KUV100 NXT">
+      <div class="car-info">
+        <h2>Mahindra KUV100 NXT</h2>
+        <p>Compact and stylish SUV for city driving.</p>
+        <p class="price">₹6.18 – ₹7.92 Lakh</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.hDtKF780e9skIv3e1gJFNAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mahindra Thar EV">
+      <div class="car-info">
+        <h2>Mahindra Thar EV (Upcoming)</h2>
+        <p>Electric version of the Thar with futuristic design.</p>
+        <p class="price">Expected ₹20 – ₹25 Lakh</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

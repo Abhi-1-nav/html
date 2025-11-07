@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahindra Login</title>
+<style>
+body {
+  margin: 0; font-family: Poppins, sans-serif; color: white;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('https://e0.pxfuel.com/wallpapers/240/312/desktop-wallpaper-mahindra-red-logo-red-brickwall-mahindra-logo-brands-mahindra-neon-logo-mahindra.jpg');
+  background-size: cover; background-position: center; height: 100vh;
+  display: flex; flex-direction: column; align-items: center;
+}
+.NB {
+  background: black; display: flex; align-items: center; gap: 20px;
+  padding: 20px; height: 60px; width: 100%;
+  position: fixed; top: 0; left: 0; z-index: 1000;
+}
+.NB li { list-style: none; }
+.NB a {
+  color: white; font-size: 20px; margin-left: 40px; font-family: cursive;
+  text-decoration: none; transition: 0.3s;
+}
+.NB a:hover { color: orange; }
+.NB button {
+  background: orange; border: none; border-radius: 12px;
+  padding: 5px 10px; margin-left: 5px; transition: 0.3s;
+}
+.NB button:hover { background: #ffb347; }
+.NB button a { color: black; text-decoration: none; font-weight: bold; }
+.login-box {
+  margin-top: 150px; background: rgba(0,0,0,0.7); padding: 40px;
+  border-radius: 20px; box-shadow: 0 0 15px rgba(255,165,0,0.5);
+  text-align: center; width: 320px;
+}
+.login-box h1 { color: orange; margin-bottom: 20px; }
+.login-box input {
+  width: 100%; padding: 12px; margin: 10px 0; border: none;
+  border-radius: 10px; outline: none;
+}
+.login-btn {
+  width: 100%; background: orange; border: none; padding: 10px;
+  border-radius: 10px; font-size: 18px; cursor: pointer; transition: 0.3s;
+}
+.login-btn:hover { background: #ffb347; }
+.login-box p a { color: orange; text-decoration: none; }
+.login-box p a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<nav class="NB">
+  <li><a href="" style="font-size:30px;">Mahindra</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="car.html">Popular Cars</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  <button><a href="signup.html">Sign Up</a></button>
+  <button><a href="login.html">Login</a></button>
+</nav>
+
+<div class="login-box">
+  <h1>Login</h1>
+  <form>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit" class="login-btn">Login</button>
+  </form>
+  <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+</div>
+
+</body>
+</html>
